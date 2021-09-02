@@ -3,16 +3,16 @@ import tick from './css/check-solid.svg'
 import imp from './css/important.svg'
 
 function Tick({todo}){
-    var today = new Date;
+    var today = new Date();
     var date = today.getDate()+"/"+today.getMonth()+"/"+today.getFullYear();
     if(todo.complete){
         return(
-            <img src={tick} height="20px" width="20px"/>
+            <img src={tick} alt="Done" height="20px" width="20px"/>
         )
     }
     else if(date !== todo.date){
         return(
-            <img src={imp} height="20px" width="20px"/>
+            <img src={imp} alt="Imp" height="20px" width="20px"/>
         )
     }
     else{

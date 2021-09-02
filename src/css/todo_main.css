@@ -50,6 +50,12 @@
     font-size: 18px;
     padding: 25px;
     position: relative;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.todo_cont .todo_card:hover{
+    transform: scale(1.01);
+    background-color: rgba(66, 66, 66, 0.5);
 }
 .todo_cont .todo_card .title{
     font-size: 20px;
@@ -104,4 +110,22 @@
     width: 40%;
     display: flex;
     justify-content: space-between;
+}
+
+@media only screen and (max-width: 800px) {
+    .todo_cont .empty_todo{
+        width: 100%;
+    }
+    .todo_cont .todo_card{
+        width: 100%;
+    }
+    .todo_cont .tode_inp{
+        width: 90%;
+    }
+    .todo_cont .btn_cont{
+        width: 85%;
+    }
+    .todo_cont .stat{
+        width: 80%;
+    }
 }

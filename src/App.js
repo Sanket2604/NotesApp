@@ -26,10 +26,10 @@ function App() {
   function handleAddTodo(e){
     const name = todoNameRef.current.value
     if(name==='') return
-    var today = new Date;
+    var today = new Date();
     var date = today.getDate()+"/"+today.getMonth()+"/"+today.getFullYear();
     setTodos(prevTodos => {
-      return [...prevTodos, {id: 1, name: name, complete: false, date: date}]
+      return [...prevTodos, {id: Math.random(), name: name, complete: false, date: date}]
     })
     
     todoNameRef.current.value = null
