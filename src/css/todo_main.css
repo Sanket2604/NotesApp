@@ -34,9 +34,8 @@
     border: 2px dotted white;
     border-radius: 10px;
     margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    line-height: 30px;
     font-size: 18px;
     padding: 25px;
 }
@@ -80,6 +79,7 @@
     outline: none;
     border: none;
     border-radius: 10px;
+    text-align: center;
 }
 .todo_cont .btn_cont{
     margin-top: 25px;
@@ -132,17 +132,21 @@
 @media only screen and (max-width: 500px) {
     .todo_cont .empty_todo{
         width: 100%;
+        font-size: 16px;
     }
     .todo_cont .todo_card{
         width: 100%;
+        font-size: 16px;
     }
     .todo_cont .tode_inp{
         width: 100%;
     }
     .todo_cont .btn_cont{
         width: 100%;
+        font-size: 14px;
     }
     .todo_cont .stat{
         width: 100%;
+        font-size: 12px;
     }
 }
